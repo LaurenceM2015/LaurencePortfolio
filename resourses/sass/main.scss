@@ -1,0 +1,41 @@
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/about";
+@import "components/bg-video";
+@import "components/buttons";
+@import "components/card";
+@import "components/composition";
+@import "components/cta-button";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/portfolio";
+@import "components/process";
+@import "components/showcase";
+@import "components/social-links";
+@import "components/story";
+@import "components/timeLine";
+
+
+
+
+@import "layouts/footer";
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/sidebar";
+
+// Accepte it 
+@import "pages/home";
+@import "pages/_page-resume";
+@import "pages/_page-portfolio";
+@import "pages/_page-resources";
+
+
