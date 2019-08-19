@@ -1,6 +1,10 @@
 
-.masthead {
-    height: 85vh;
+/*=========================================*/
+/*              MAIN HEADER                */
+/*========================================*/
+
+  .masthead {
+    height: 95vh;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -10,30 +14,40 @@
         background-size: cover;
         background-position: center top;
         position: relative;
-        padding-top: calc(6rem + 7.2rem);
+        padding-top: calc(6rem + 74px);
         padding-bottom: 6rem;
-
+        
         // top left, top right, 
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-   
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
-    h2 {
-      font-size: 1.3rem;
-      @include body-font;
+
+    .masthead-heading {
+    line-height: 2.75rem;
+    }
+    .masthead-subheading {
+
+    }
+    .masthead-avatar {
+      width: 15rem;
     }
   }
-
-  @media (min-width: 992px) {
+  
+  @media(min-width:992px) {
     .masthead {
-      padding-top: calc(6rem + 106px);
-      padding-bottom: 6rem;
-      h1 {
-        font-size: 4.75em;
-        line-height: 4rem;
+      height: 85vh;
+      //padding-top: calc(6rem + 104px);
+      //padding-bottom: 6rem;
+
+      // top left, top right, 
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+      .masthead-heading {
+        line-height: 2.75rem;
       }
-      h2 {
-        font-size: 1.75em;
+      .masthead-subheading {
+        
       }
   
     }

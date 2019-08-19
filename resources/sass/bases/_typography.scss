@@ -11,25 +11,33 @@
  
  
  .heading-primary {
-  color: $color-white;
-
   backface-visibility: hidden;
+  color: $color-white;
   margin-bottom: 3rem;
 
   &--main {
       display: block;
-      font-size: 4rem;
+      font-size: 3rem;
+      letter-spacing: .5rem;
       line-height: 3.5rem;
       font-weight: 400;
-      letter-spacing: 1.5rem;
+      margin-bottom: 2rem !important;
+
   
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
-      margin-bottom: 3rem !important;
+      
+      @media (min-width: 992px){
+        font-weight: 500;
+        line-height: 3.5rem;
+        letter-spacing: 1.5rem;
+        margin-bottom: 3rem !important;
+
+      }
       
      /* @include respond(phone) {
-          letter-spacing: 1rem;
+          
           font-family: 5rem;
       }
       
@@ -40,9 +48,9 @@
   
   &--sub {
       display: block;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 700;
-      letter-spacing: 1.75rem;
+      letter-spacing: .6rem;
       animation: moveInRight 1s ease-out;
 
       /*
@@ -50,6 +58,11 @@
           letter-spacing: .5rem;
       }
       */
+
+      @media (min-width: 992px){
+        font-size: 2rem;
+        letter-spacing: 1.2rem;
+      }
   }
 }
 

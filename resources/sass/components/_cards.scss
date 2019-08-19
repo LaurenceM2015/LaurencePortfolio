@@ -1,15 +1,22 @@
-// Styling for the portfolio section
+// Styling for the portfolio grid section
 .portfolio {
-  margin-bottom: -15px;
+  margin-bottom: -30px;
   .portfolio-item {
+    cursor: pointer;
     position: relative;
     display: block;
     max-width: 25rem;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    border-radius: $border-radius;
+    overflow: hidden;
     .portfolio-item-caption {
-      -webkit-transition: all ease 0.5s;
-      -moz-transition: all ease 0.5s;
-      transition: all ease 0.5s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      opacity: 0;
+      background-color: rgba(26, 188, 156, 0.9);
       opacity: 0;
       background-color: fade-out($color-primary, .1);
       &:hover {
@@ -20,44 +27,26 @@
       }
     }
   }
-  @media (min-width: 576px) {
-    margin-bottom: -30px;
-    .portfolio-item {
-      margin-bottom: 30px;
-    }
-  }
 }
 
+// Styling for the portfolio modals
 .portfolio-modal {
-  .portfolio-modal-dialog {
-    padding: 3rem 1rem;
-    min-height: calc(100vh - 2rem);
-    margin: 1rem calc(1rem - 8px);
-    position: relative;
-    z-index: 2;
-    -moz-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
-    -webkit-box-shadow: 0 0 3rem 1rem fade-out(black, .5);
-    box-shadow: 0 0 3rem 1rem fade-out(black, .5);
-    .close-button {
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-      i {
-        line-height: 38px;
-      }
-    }
-    h2 {
-      font-size: 2rem;
+  .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+    @media(min-width:992px) {
+      font-size: 3rem;
+      line-height: 2.5rem;
     }
   }
-  @media(min-width: 768px) {
-    .portfolio-modal-dialog {
-      min-height: 100vh;
-      padding: 5rem;
-      margin: 3rem calc(3rem - 8px);
-      h2 {
-        font-size: 3rem;
-      }
-    }
+  .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $color-primary;
+    opacity: 1;
   }
 }
