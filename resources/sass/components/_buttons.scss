@@ -1,0 +1,48 @@
+
+
+
+
+  // Custom Button Size
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+  
+  // Custom Rounded Social Button
+.btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+  .btn {
+    border-width: .2rem;
+  }
+
+  .btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($color-primary, 10%);
+      border-color: darken($color-primary, 10%);
+    }
+  }
+  
+  .btn-secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($color-secondary, 10%);
+      border-color: darken($color-secondary, 10%);
+    }
+  }
+  
+  
+
+  
+  

@@ -1,0 +1,42 @@
+body {
+    font-family: 'Lato';
+    //background-color: red;
+}
+
+
+// Section Padding Settings
+section {
+  padding: 6rem 0;
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+
+  a {
+    color: #18BC9C;
+  }
+
+  a {
+    color: $color-primary;
+    &:focus,
+    &:hover,
+    &:active {
+      color: darken($color-primary, 10%);
+    }
+  }
+  
+  a:focus, a:hover, a:active {
+    color: #128f76;
+  }
+
+  .copyright {
+    background-color: #1a252f;
+  }
