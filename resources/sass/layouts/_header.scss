@@ -4,7 +4,7 @@
 /*========================================*/
 
   .masthead {
-    height: 95vh;
+    height: 85vh;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -35,7 +35,7 @@
   
   @media(min-width:992px) {
     .masthead {
-      height: 85vh;
+      height: 90vh;
       padding-top: calc(6rem + 104px);
       //padding-bottom: 6rem;
 

@@ -42,6 +42,10 @@
 @import "layouts/header";
 @import "layouts/navigation";
 
+// MAIN PAGES 
+
+@import "pages/home";
+
 /*
 
 
@@ -51,7 +55,7 @@
 @import "layouts/sidebar";
 
 // Accepte it 
-@import "pages/home";
+
 @import "pages/_page-resume";
 @import "pages/_page-portfolio";
 @import "pages/_page-resources";
