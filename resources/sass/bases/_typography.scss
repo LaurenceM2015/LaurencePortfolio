@@ -78,12 +78,17 @@
   letter-spacing: .2rem;
   transition: all .2s;
 
+  &--white{
+    background-image: linear-gradient(to right, $color-white, $color-white);
+  }
+
 
   &:hover {
       transform: skewY(2deg) skewX(15deg) scale(1.1);
       text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
   }
 }
+
 
 .heading-tertiary {
   //font-size: $default-font-size;

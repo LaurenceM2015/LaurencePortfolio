@@ -1,3 +1,28 @@
 .portfolio-section{
     margin-top: -15vh;
 }
+
+.about-section{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(img/bkg-img.jpg);
+    background-size: cover;
+
+    transform: skewY(-7deg);
+
+    margin-top: -15vh;
+
+    & > * {
+       transform: skewY(7deg); 
+    }
+
+    &__box{
+        background-color: rgba($color-white, .8);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+}
+
+
+
