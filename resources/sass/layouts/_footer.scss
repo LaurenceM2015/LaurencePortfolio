@@ -1,6 +1,13 @@
 .footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: $color-secondary;
-    color: #fff;
-  }
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: $color-secondary;
+  color: $color-white;
+
+
+
+.copyright {
+  background-color: darken($color-secondary, 10%);
+}
+
+}

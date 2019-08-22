@@ -4,20 +4,7 @@ body {
 }
 
 
-// Section Padding Settings
-section {
-  padding: 10rem 0;
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2rem;
-  }
-  @media (min-width: 992px) {
-    h2 {
-      font-size: 3rem;
-      line-height: 2.5rem;
-    }
-  }
-}
+
 
 
   a {
@@ -40,3 +27,18 @@ section {
   .copyright {
     background-color: #1a252f;
   }
+
+  // Styling for page sections
+.page-section {
+  padding: 10rem 0;
+  .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    .page-section-heading {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
