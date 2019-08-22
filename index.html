@@ -31,18 +31,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-0 mx-lg-1">
+                <li class="nav-item footer__item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="nav-item mx-0 mx-lg-1">
+                <li class="nav-item footer__item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
                 </li>
 
-                <li class="nav-item mx-0 mx-lg-1">
+                <li class="nav-item footer__item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
                 </li>
 
-                <li class="nav-item mx-0 mx-lg-1">
+                <li class="nav-item footer__item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
                 </li>
                 </ul>
@@ -209,10 +209,10 @@
                 <div class="container">
             
                 <!-- About Section Heading -->
-                <h2 class="page-section-heading heading-secondary heading-secondary--white mb-5">More About Me</h2>
+                <h2 class="page-section-heading heading-secondary heading-secondary--white mb-5">About Me</h2>
             
                 <!-- About Section Content -->
-                  <div class="about-section__box py-5 text-muted">
+                  <div class="card py-5 text-muted">
                     <div class="row text-left">
                      
                         <div class="col-lg-4 ml-auto">
@@ -236,7 +236,7 @@
                     </div>
 
                     <div class="text-center mt-4">
-                      <a href="#" class="btn btn--green">
+                      <a href="#" class="Btn Btn--green">
                           <i class="fas fa-download mr-2"></i>
                           Free Download!
                       </a>
@@ -253,7 +253,7 @@
               <div class="container">
                   <div class="row">
                       <div class="col-lg-12 text-center my-5">
-                          <h2 class="heading-secondary page-section-heading text-center text-uppercase">My Skills</h2>
+                          <h2 class="heading-secondary page-section-heading text-center text-uppercase py-5">My Skills</h2>
                       <p class="text-muted pt-3">Lorem ipsum dolor sit amet consectetur.</p>
                       </div>
                   </div><!-- ./ row -->
@@ -338,7 +338,7 @@
             <div class="container">
         
               <!-- Contact Section Heading -->
-              <h2 class="page-section-heading text-center heading-secondary text-secondary py-5 mb-5">Contact Me</h2>
+              <h2 class="page-section-heading text-center heading-secondary text-secondary mb-5">Contact Me</h2>
         
               <!-- Icon Divider -->
               
@@ -351,7 +351,7 @@
                   <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                 
                     <form name="sentMessage -5" id="contactForm" novalidate="novalidate">
-                      <div class="control-group">
+                      <div class="control-group py-5">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                           <label>Name</label>
                           <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
@@ -382,7 +382,7 @@
                       <br>
                       <div id="success"></div>
                       <div class="form-group">
-                        <button type="submit" class="btn btn--green" id="sendMessageButton">Send</button>
+                        <button type="submit" class="Btn Btn--green" id="sendMessageButton">Send</button>
                       </div>
                     </form>
                   </div>
@@ -394,9 +394,72 @@
 
       </main>
       
-     <footer>
-       Footer Goes here
-     </footer>
+      <footer class="footer text-center">
+          <div class="container-fluid">
+            <div class="row">
+      
+              <!-- Footer Location -->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="footer__nav">
+                  <ul class="nav footer__list">
+                    <li class="nav-item footer__item ">
+                      <a class="nav-link footer__link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item footer__item ">
+                      <a class="nav-link footer__link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item footer__item ">
+                      <a class="nav-link footer__link" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+      
+              <!-- Footer About Text -->
+              <div class="col-lg-4">
+                
+                <p class="lead mb-0">A bootstrap theme build and created by 
+                  <a href="#">Laurence Malonga</a>.</p>
+              </div>
+
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Follow Me Around</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                      <i class="fab fa-fw fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                      <i class="fab fa-fw fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                      <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-github-alt"></i>
+                      </a>
+                    
+                  </div>
+      
+            </div><!-- ./ row -->
+          </div> <!-- container -->
+
+          
+      </footer>
+
+       <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Laurence M 2019</small>
+      </div>
+    </section>
+  
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
 
         <!--SCRIPT FILES -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -185,16 +185,31 @@
 }
 
 .card{
-  width: 75%;
+  
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
   background-color: rgba($color-white, .6);
   border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
-  margin-bottom: 6rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  
+  .col{
+    padding-bottom: 1.5rem;
+  }
  // font-size: $default-font-size;
-  transform: skewX(-12deg);
+  
+
+  @media (min-width: 992px){
+    transform: skewX(-12deg);
+    padding: 6rem;
+    padding-left: 9rem;
+    //margin-bottom: 6rem;
+   
+
+      & > * {
+        transform: skewX(12deg); 
+    }
+  }
   
   &__heading{
     text-align: left;
@@ -204,9 +219,7 @@
 
   }
 
-  & > * {
-    transform: skewX(12deg); 
- }
+  
 
   img{
     margin: 0 auto;
