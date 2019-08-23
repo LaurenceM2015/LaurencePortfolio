@@ -317,10 +317,11 @@ hr.star-dark:after {
     line-height: 3.1rem; }
 
 .portfolio-item {
+  cursor: pointer;
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
+  max-width: 53rem;
   margin: auto auto 1rem; }
   .portfolio-item .caption {
     display: flex;

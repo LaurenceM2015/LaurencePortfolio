@@ -1,8 +1,9 @@
 .portfolio-item {
+  cursor: pointer;
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
+  max-width: 53rem;
   margin: auto auto 1rem;
 
   .caption {
