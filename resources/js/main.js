@@ -1,3 +1,4 @@
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -61,3 +62,27 @@
   });
 
 })(jQuery); // End of use strict
+
+
+$(document).ready(function(){
+  $(".button").click(function(){
+    var value = $(this).attr("data-filter");
+      if (value == "all")
+
+      {
+        $(".filter").show("1000");
+      }
+      else {
+      
+        $(".filter").not("."+value).hide("1000");
+        $(".filter").filter("."+value).show("1000");
+      }
+
+      // ADD ACTIVE CLASS
+      $("ul .button").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      })
+
+
+  });
+});

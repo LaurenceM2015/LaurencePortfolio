@@ -13,12 +13,17 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-       
 
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+       
+      
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Laurence Malonga &mdash; Portfolio </title>
+      
+
+        
     </head>
     <body id="page-top">
         <!-- Navigation -->
@@ -101,13 +106,26 @@
                 <div class="row">
                     <div class="col-lg-12 text-center my-5">
                         <h2 class="heading-secondary page-section-heading text-center text-secondary">My Work Projects</h2>
-                    <p class="text-muted pt-3">Lorem ipsum dolor sit amet consectetur.</p>
+                      <p class="text-muted pt-3">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+
+                    <div class="col-lg-12 text-center my-5">
+                      <nav class="navbar">
+                          <ul class="nav caption d-flex justify-content-around">
+                              <li class="button active" data-filter="all">All</li>
+                              <li class="button" data-filter="website">website</li>
+                              <li class="button" data-filter="graphics">Graphics</li>
+                              <li class="button" data-filter="psd">PSD</li>
+                              <li class="button" data-filter="logo">Logo</li>
+                              <li class="button" data-filter="application">Application</li>
+                            </ul>
+                      </nav>
                     </div>
                 </div>
                 
-                <ul class="portfolio-grid">
+                <div class="portfolio-grid">
                   <!-- Portfolio Item 1 -->
-                  <li class="portfolio-grid">
+                  <div class="filter website graphics">
                     <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal1">
                       <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
                         <span class="caption-content text-center">
@@ -117,10 +135,10 @@
                       </span>
                       <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
                     </a>
-                  </li>
+                  </div>
 
                 <!-- Portfolio Item 2 -->
-                  <li class="portfolio-grid__item">
+                  <div class="filter graphics">
                     <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal2">
                       <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
                         <span class="caption-content text-center">
@@ -131,10 +149,10 @@
                       </span>
                       <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
                     </a>
-                  </li>
+                  </div>
 
                 <!-- Portfolio Item 3 -->
-                <li class="portfolio-grid__item">
+                <div class="filter application">
                   <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal3">
                     <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
                       <span class="caption-content text-center">
@@ -145,10 +163,10 @@
                     </span>
                     <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
                   </a>
-                </li>
+                </div>
 
                  <!-- Portfolio Item 4 -->
-                <li class="portfolio-grid__item">
+                <div class="filter graphics">
                   <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal4">
                     <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
                       <span class="caption-content text-center">
@@ -159,10 +177,10 @@
                     </span>
                     <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
                   </a>
-                </li>
+                </div>
 
                  <!-- Portfolio Item 5 -->
-                <li class="portfolio-grid__item">
+                <div class="filter application graphics">
                   <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal5">
                     <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
                       <span class="caption-content text-center align-self-center">
@@ -173,10 +191,10 @@
                     </span>
                     <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
                   </a>
-                </li>
+                </div>
 
                  <!-- Portfolio Item 6 -->
-                 <li class="portfolio-grid__item">
+                 <div class="filter website">
                     <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal6">
                         <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
                             <span class="caption-content text-center align-self-center">
@@ -187,24 +205,57 @@
                       </span>
                       <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
                     </a>
-                </li>
+                  </div>
 
-                </ul><!--   -->
 
-             
+                <!-- Portfolio Item 7 -->
+                <div class="filter application">
+                    <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal6">
+                        <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <span class="caption-content text-center align-self-center">
+                          <i class="fas fa-plus fa-3x"></i>
+                          <h3>Heading</h3>
+          
+                        </span>
+                      </span>
+                      <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                    </a>
+                  </div>
+
+                 <!-- Portfolio Item 8 -->
+                 <div class="filter psd">
+                    <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal6">
+                        <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <span class="caption-content text-center align-self-center">
+                          <i class="fas fa-plus fa-3x"></i>
+                          <h3>Heading</h3>
+          
+                        </span>
+                      </span>
+                      <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                    </a>
+                  </div>
+
+                 <!-- Portfolio Item 9 -->
+                 <div class="filter logo">
+                    <a class="portfolio-item" data-toggle="modal" data-target="#portfolioModal6">
+                        <span class="caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <span class="caption-content text-center align-self-center">
+                          <i class="fas fa-plus fa-3x"></i>
+                          <h3>Heading</h3>
+          
+                        </span>
+                      </span>
+                      <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                    </a>
+                  </div>
+
+                </div><!--   -->
                 <!-- ./ end row -->
-  
-            </div> 
+            </di> 
               <!-- ./ end container -->
-          </section>
-                
-
-              </div> 
-              <!-- ./ end container -->
-          </section>
-
-            
-    </main>
+          </section> 
+      </main>
       
       <footer class="footer text-center">
           <div class="container-fluid">
@@ -512,8 +563,11 @@
 
 
         <!--SCRIPT FILES -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>        
+       
+       
+          
+        
+             
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 

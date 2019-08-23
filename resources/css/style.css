@@ -744,9 +744,25 @@ form .row:first-child .floating-label-form-group {
   padding-left: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
+  .portfolio-section .portfolio-grid .portfolio-item {
+    margin: 0; }
+    .portfolio-section .portfolio-grid .portfolio-item .caption {
+      background-color: transparent; }
 
-.portfolio-section .portfolio-item {
-  margin: 0; }
+.portfolio-section .nav {
+  position: relative;
+  width: 100%; }
+  .portfolio-section .nav li {
+    color: #2C3E50;
+    border: 1px solid #2C3E50;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer; }
+  .portfolio-section .nav .active {
+    background-color: #18BC9C;
+    color: #fff;
+    border: 1px solid #18BC9C; }
 
 /*
 
