@@ -52,7 +52,7 @@
          <!-- ./ Navbar -->
          <!-- Header -->
      <!-- Masthead -->
-      <header class="masthead bg-primary text-white text-center d-flex  flex-column justify-content-center">
+      <header class="masthead bg-primary text-white text-center d-flex  flex-column justify-content-center" id="header">
         <div class="container d-flex align-items-center flex-column">
     
           <h1 class="masthead-heading text-uppercase mb-0">
@@ -78,7 +78,7 @@
         <main>
             
           <!-- Portfolio Grid -->
-          <section class="page-section portfolio-section" id="Portfolio">
+          <section class="page-section portfolio-section portfolio" id="Portfolio">
               <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center my-5">
@@ -87,119 +87,58 @@
                     </div>
                 </div>
 
-                <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                    <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                    </div>
-                                    <img class="img-fluid" src="http://placehold.it/500x325" alt="">
-                                </a>
-                                <div class="portfolio-caption">
-                                <h4>Personel Portfolio</h4>
-                                <p class="text-muted">Bootstap 4 Theme</p>
-                                </div>
-                            </div>
+                <div class="row no-gutters">
+                   <!-- Portfolio Item 1 -->
+                  <div class="col-lg-6">
+                      <a class="portfolio-item" href="#">
+                        <span class="caption">
+                          <span class="caption-content">
+                              <i class="fas fa-plus fa-3x"></i>
+                            <h2>Stationary</h2>
                             
-                        </div>
-                        <!-- portfolio item 1 -->
+                          </span>
+                        </span>
+                        <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                      </a>
+                  </div>
 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                    <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                    </div>
-                                    <img class="img-fluid" src="http://placehold.it/500x325" alt="">
-                                </a>
-                                <div class="portfolio-caption">
-                                <h4>KSM</h4>
-                                <p class="text-muted">Bootstrap &amp; Wordpress Theme</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item 2 -->
 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                    <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                    </div>
-                                
-                                    <img class="img-fluid" src="http://placehold.it/500x325" alt="">
-                                </a>
-                                <div class="portfolio-caption">
-                                <h4>We Rise To Shine</h4>
-                                <p class="text-muted">HTML 5 Theme</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item 3 -->
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                    <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                    </div>
-                                    <img class="img-fluid" src="http://placehold.it/500x325" alt="">
-                                </a>
-                                <div class="portfolio-caption">
-                                <h4>Omnifood</h4>
-                                <p class="text-muted">HTML5 Theme</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item 4 -->
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                    <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                    </div>
-                                    <img class="img-fluid" src="http://placehold.it/500x325" alt="">
-                                </a>
-                                <div class="portfolio-caption">
-                                <h4>Natours</h4>
-                                <p class="text-muted">HTML5 Theme</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item 5 -->
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fas fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="http://placehold.it/500x325" alt="">
-                                </a>
-                                <div class="portfolio-caption">
-                                <h4>Nexter</h4>
-                                <p class="text-muted">HTML5 Theme</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item 6 -->
-
-                </div>
+                    <div class="col-lg-6">
+                      <a class="portfolio-item" href="#">
+                        <span class="caption">
+                          <span class="caption-content">
+                            <h2>Ice Cream</h2>
+                            <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                          </span>
+                        </span>
+                        <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a class="portfolio-item" href="#">
+                        <span class="caption">
+                          <span class="caption-content">
+                            <h2>Strawberries</h2>
+                            <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                          </span>
+                        </span>
+                        <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a class="portfolio-item" href="#">
+                        <span class="caption">
+                          <span class="caption-content">
+                            <h2>Workspace</h2>
+                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                          </span>
+                        </span>
+                        <img class="img-fluid" src="https://source.unsplash.com/random/570x300" alt="">
+                      </a>
+                    </div>
+                  </div>
                 <!-- ./ end row -->
+
               </div> 
               <!-- ./ end container -->
           </section>
@@ -677,6 +616,119 @@
           </div>
         </div>
       </div>
+
+<!--
+      <div class="row">
+          <div class="col-md-4 col-sm-6">
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                      </div>
+                      <img class="img-fluid" src="http://placehold.it/500x325" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                  <h4>Personel Portfolio</h4>
+                  <p class="text-muted">Bootstap 4 Theme</p>
+                  </div>
+              </div>
+              
+          </div>
+          
+          <div class="col-md-4 col-sm-6">
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                      <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                      </div>
+                      <img class="img-fluid" src="http://placehold.it/500x325" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                  <h4>KSM</h4>
+                  <p class="text-muted">Bootstrap &amp; Wordpress Theme</p>
+                  </div>
+              </div>
+          </div>
+          
+
+          <div class="col-md-4 col-sm-6">
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                      <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                      </div>
+                  
+                      <img class="img-fluid" src="http://placehold.it/500x325" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                  <h4>We Rise To Shine</h4>
+                  <p class="text-muted">HTML 5 Theme</p>
+                  </div>
+              </div>
+          </div>
+         
+
+          <div class="col-md-4 col-sm-6">
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                      <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                      </div>
+                      <img class="img-fluid" src="http://placehold.it/500x325" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                  <h4>Omnifood</h4>
+                  <p class="text-muted">HTML5 Theme</p>
+                  </div>
+              </div>
+          </div>
+          
+
+          <div class="col-md-4 col-sm-6">
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                      <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                      </div>
+                      <img class="img-fluid" src="http://placehold.it/500x325" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                  <h4>Natours</h4>
+                  <p class="text-muted">HTML5 Theme</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-6">
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                              <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="http://placehold.it/500x325" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                  <h4>Nexter</h4>
+                  <p class="text-muted">HTML5 Theme</p>
+                  </div>
+              </div>
+          </div>
+         
+
+  </div>
+   ./ end row -->
 
 
     
