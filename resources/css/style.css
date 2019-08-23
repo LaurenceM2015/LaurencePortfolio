@@ -683,7 +683,9 @@ form .row:first-child .floating-label-form-group {
       transition: padding-top 0.3s, padding-bottom 0.3s; } }
   #mainNav .navbar-brand {
     color: #fff;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: #18BC9C; }
     @media (min-width: 992px) {
       #mainNav .navbar-brand {
         font-size: 1.75em;
@@ -751,14 +753,17 @@ form .row:first-child .floating-label-form-group {
 
 .portfolio-section .nav {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  justify-content: space-around; }
   .portfolio-section .nav li {
     color: #2C3E50;
     border: 1px solid #2C3E50;
     padding: 1rem 2rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    flex-basis: 0.16%; }
   .portfolio-section .nav .active {
     background-color: #18BC9C;
     color: #fff;

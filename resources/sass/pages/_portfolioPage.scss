@@ -18,16 +18,18 @@
     .nav{
         position: relative;
         width: 100%;
+       
         
-
+        justify-content: space-around;
         li{
            color: $color-secondary;
            border: 1px solid $color-secondary; 
            padding: 1rem 2rem;
+           margin-bottom: 1rem;
            text-transform: uppercase;
            text-align: center;
            cursor: pointer;
-           
+           flex-basis: 0.16%;
 
            &:hover{
                
