@@ -331,40 +331,37 @@ hr.star-dark:after {
     position: absolute;
     top: 0;
     bottom: 0;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px); }
     .portfolio-item .caption .caption-content {
       color: #fff;
-      margin: 2rem; }
+      margin: 2rem;
+      opacity: 0; }
       .portfolio-item .caption .caption-content h2 {
         text-transform: uppercase; }
       .portfolio-item .caption .caption-content p {
         font-weight: 300;
         font-size: 1.2rem; }
-  .portfolio-item .img-fluid {
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
     height: 100%; }
+  .portfolio-item:hover .caption-content {
+    opacity: 1; }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem); }
+  .portfolio-item:hover .caption {
+    background-color: rgba(24, 188, 156, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem); }
   @media (min-width: 992px) {
     .portfolio-item {
       max-width: none;
-      margin: 0; }
-      .portfolio-item .caption {
-        -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-        -webkit-clip-path: inset(0px);
-        clip-path: inset(0px); }
-        .portfolio-item .caption .caption-content {
-          opacity: 0; }
-      .portfolio-item img {
-        -webkit-transition: -webkit-clip-path 0.25s ease-out;
-        -webkit-clip-path: inset(-1px);
-        clip-path: inset(-1px); }
-      .portfolio-item:hover .caption-content {
-        opacity: 1; }
-      .portfolio-item:hover img {
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem); }
-      .portfolio-item:hover .caption {
-        background-color: rgba(24, 188, 156, 0.9);
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem); } }
+      margin: 0; } }
 
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
@@ -721,7 +718,7 @@ form .row:first-child .floating-label-form-group {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em; }
+    font-size: 1em; }
 
 .portfolio-section {
   padding-bottom: 15rem; }
@@ -742,6 +739,14 @@ form .row:first-child .floating-label-form-group {
 .contact-section {
   position: relative;
   margin-top: 0; }
+
+.portfolio-section .portfolio-grid {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
+
+.portfolio-section .portfolio-item {
+  margin: 0; }
 
 /*
 

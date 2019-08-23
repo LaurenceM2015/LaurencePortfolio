@@ -6,10 +6,10 @@
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
 
+  
 
   @media (min-width: 992px){
     
-    //  background-color: transparent;
     //  padding-top: 1.5rem;
     //  padding-bottom: 1.5rem;
       transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -82,7 +82,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 

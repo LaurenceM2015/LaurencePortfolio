@@ -1,0 +1,13 @@
+
+
+.portfolio-section{
+    .portfolio-grid{
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    }
+
+    .portfolio-item{
+        margin: 0;
+    }
+}
