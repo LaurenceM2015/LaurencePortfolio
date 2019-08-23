@@ -1,5 +1,5 @@
 .portfolio-section{
-    margin-top: -15vh;
+   padding-bottom: 15rem;
 }
 
 .about-section{
@@ -9,10 +9,8 @@
         rgba($color-primary-dark, 0.8)),
     url(img/bkg-img.jpg);
     background-size: cover;
-
+    
     transform: skewY(-7deg);
-
-    margin-top: -15vh;
 
     & > * {
        transform: skewY(7deg); 
@@ -24,16 +22,13 @@
     }
 }
 
-.skills-section{
-    margin-top: -15vh;
-}
-
 /*=============================*/
 /*       CONTACT SECTION       */
 /*=============================*/
 
 .contact-section{
     position: relative;
+    margin-top: 0;
 
     
 }
