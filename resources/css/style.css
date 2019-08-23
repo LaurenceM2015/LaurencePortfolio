@@ -333,12 +333,14 @@ hr.star-dark:after {
     z-index: 1; }
     .portfolio-item .caption .caption-content {
       color: #fff;
-      margin: auto 2rem 2rem; }
+      margin: 2rem; }
       .portfolio-item .caption .caption-content h2 {
         text-transform: uppercase; }
       .portfolio-item .caption .caption-content p {
         font-weight: 300;
         font-size: 1.2rem; }
+  .portfolio-item .img-fluid {
+    height: 100%; }
   @media (min-width: 992px) {
     .portfolio-item {
       max-width: none;
@@ -348,10 +350,7 @@ hr.star-dark:after {
         -webkit-clip-path: inset(0px);
         clip-path: inset(0px); }
         .portfolio-item .caption .caption-content {
-          opacity: 0;
-          margin-left: 5rem;
-          margin-right: 5rem;
-          margin-bottom: 5rem; }
+          opacity: 0; }
       .portfolio-item img {
         -webkit-transition: -webkit-clip-path 0.25s ease-out;
         -webkit-clip-path: inset(-1px);

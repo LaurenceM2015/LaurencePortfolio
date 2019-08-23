@@ -16,7 +16,7 @@
     z-index: 1;
     .caption-content {
       color: $color-white;
-      margin: auto 2rem 2rem;
+      margin: 2rem;
       h2 {
         text-transform: uppercase;
       }
@@ -26,6 +26,10 @@
       }
     }
   } // caption
+
+  .img-fluid{
+    height: 100%;
+  }
 
 
   @media(min-width: 992px) {
@@ -39,9 +43,9 @@
       .caption-content {
         opacity: 0;
        // transition: opacity 0.25s;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
+       // margin-left: 5rem;
+       // margin-right: 5rem;
+       // margin-bottom: 5rem;
       }
     }
     img {
@@ -79,7 +83,15 @@
       font-size: 3rem;
       line-height: 2.5rem;
     }
+
   }
+
+  .modal-body img{
+    //height: 20rem !important;
+    //width: 100%;
+  }
+
+
   .close {
     position: absolute;
     z-index: 1;
