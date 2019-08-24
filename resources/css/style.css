@@ -124,6 +124,7 @@ h6 {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
+  color: #2C3E50;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -409,45 +410,41 @@ hr.star-dark:after {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-.card {
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 3px;
-  padding: 1rem;
-  margin-bottom: 3rem; }
-  .card .col {
-    padding-bottom: 1.5rem; }
-  @media (min-width: 992px) {
-    .card {
-      transform: skewX(-12deg);
-      padding: 6rem;
-      padding-left: 9rem; }
-      .card > * {
-        transform: skewX(12deg); } }
-  .card__heading {
-    text-align: left;
+.about-cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: 'showcase showcase showcase' 'top-box-a top-box-a' 'top-box-b top-box-b'; }
+  .about-cards .about-card-header {
     border-bottom: 1px solid #ddd;
-    padding: 1.5rem 0;
-    margin-bottom: 30px; }
-  .card img {
+    margin-bottom: 2rem;
+    padding: 1rem 0; }
+  .about-cards .profile-img {
     margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    height: 4rem; }
-  .card__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    display: inline-block;
-    color: #18BC9C; }
-    @media (min-width: 767px) {
-      .card__icon {
-        margin-bottom: 0; } }
-  @media (min-width: 800px) {
-    .card {
-      width: 100%;
-      padding: 4rem;
-      padding-top: 0; } }
+    width: 60%; }
+  .about-cards > * {
+    padding: 1rem;
+    background-color: #fff; }
+  .about-cards .col {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 3vh; }
+  @media (min-width: 992px) {
+    .about-cards {
+      grid-template-areas: 'profile top-box-a top-box-a' 'top-box-b top-box-b top-box-b'; }
+      .about-cards .profile-img {
+        grid-area: profile;
+        margin: 0;
+        width: 100%; }
+      .about-cards .top-box {
+        background-color: #fff; }
+      .about-cards .top-box-a {
+        grid-area: top-box-a;
+        /*display: grid;
+      align-items: center;
+      justify-items: center; */ }
+      .about-cards .top-box-b {
+        grid-area: top-box-b; } }
 
 /*========================================*/
 /*              STORIES BOXS              */
@@ -530,6 +527,30 @@ hr.star-dark:after {
   transform: skewX(-12deg); }
   .card-skew > * {
     transform: skewX(12deg); }
+
+.about-text {
+  padding: 2rem; }
+  @media (min-width: 992px) {
+    .about-text {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid #18BC9C; } }
+
+.about-project-text {
+  padding: 3rem;
+  font-size: 90%; }
+  @media (min-width: 992px) {
+    .about-project-text {
+      padding: 5rem; }
+      .about-project-text hr {
+        border-color: #18BC9C;
+        border-width: .25rem;
+        width: 30%; } }
+
+.form {
+  padding: 0 1.5rem; }
+  @media (min-width: 992px) {
+    .form {
+      padding: 0; } }
 
 .floating-label-form-group {
   position: relative;
@@ -732,9 +753,6 @@ form .row:first-child .floating-label-form-group {
   transform: skewY(-7deg); }
   .about-section > * {
     transform: skewY(7deg); }
-  .about-section__box {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
 
 /*=============================*/
 /*       CONTACT SECTION       */
