@@ -723,14 +723,13 @@ form .row:first-child .floating-label-form-group {
         font-weight: 300;
         padding: 1rem 2rem;
         color: #fff;
-        text-decoration: none;
         text-transform: uppercase;
-        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #18BC9C 50%);
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
         background-size: 230%;
         transition: all .4s; }
       #mainNav .navbar-nav li.nav-item a.nav-link.active, #mainNav .navbar-nav li.nav-item a.nav-link:hover, #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:active {
         background-position: 100%;
-        color: #fff;
+        color: #18BC9C;
         transform: translateX(1rem); }
   #mainNav .navbar-toggler {
     font-size: 80%;
@@ -743,6 +742,12 @@ form .row:first-child .floating-label-form-group {
   #mainNav.navbar-shrink .navbar-brand {
     color: #18BC9C;
     font-size: 1em; }
+  #mainNav.navbar-shrink li.nav-item a.nav-link {
+    color: #fff; }
+    #mainNav.navbar-shrink li.nav-item a.nav-link:link, #mainNav.navbar-shrink li.nav-item a.nav-link:visited {
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #18BC9C 50%); }
+    #mainNav.navbar-shrink li.nav-item a.nav-link.active, #mainNav.navbar-shrink li.nav-item a.nav-link:hover, #mainNav.navbar-shrink li.nav-item a.nav-link:active, #mainNav.navbar-shrink li.nav-item a.nav-link:active {
+      color: #fff; }
 
 .portfolio-section {
   padding-bottom: 15rem; }
