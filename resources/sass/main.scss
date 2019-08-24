@@ -15,6 +15,7 @@
 @import "components/cards";
 @import "components/form";
 @import "components/bg-video";
+@import "components/social-links";
 
 /* 
 
@@ -32,7 +33,7 @@
 @import "components/portfolio";
 @import "components/process";
 @import "components/showcase";
-@import "components/social-links";
+
 @import "components/story";
 @import "components/timeLine";
 */
@@ -48,6 +49,8 @@
 
 @import "pages/home";
 @import "pages/portfolioPage";
+@import "pages/resume";
+
 
 /*
 
@@ -57,10 +60,6 @@
 
 @import "layouts/sidebar";
 
-// Accepte it 
-
-@import "pages/_page-resume";
-@import "pages/_page-portfolio";
 @import "pages/_page-resources";
 
 */
