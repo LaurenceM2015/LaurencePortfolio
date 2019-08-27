@@ -30,6 +30,8 @@
 .resume-main{
   //margin: 1.5rem;
  // background-color: $color-white;
+ 
+ 
 
  p{
    font-size: 1.25rem;
@@ -52,11 +54,11 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     margin: 1.5rem auto !important;
     border-radius: 0;
-    width: 100%;
     margin-bottom: 3.5rem !important;
+    width: 90%;
     
     @media (min-width: 992px){
-      width: 70%;
+    width: 70%;
     }
   }
 

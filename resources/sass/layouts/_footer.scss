@@ -1,10 +1,10 @@
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: $color-secondary;
   color: $color-white;
 
-  
+
 
   &__nav {
     
@@ -23,7 +23,7 @@
     display: inline-block;
 
     &:not(:last-child) {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
     }
 }
 
@@ -52,5 +52,7 @@
 .copyright {
   background-color: darken($color-secondary, 10%);
 }
+
+
 
 

@@ -46,8 +46,9 @@
 .social-icons {
     a {
       display: inline-block;
-      height: 3.5rem;
-      width: 3.5rem;
+      width: 2rem;
+    height: 2rem;
+    padding: 1.2rem;
       background-color: $color-secondary;
       color: $color-white !important;
       border-radius: 100%;

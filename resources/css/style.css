@@ -643,8 +643,9 @@ form .row:first-child .floating-label-form-group {
 
 .social-icons a {
   display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 1.2rem;
   background-color: #2C3E50;
   color: #fff !important;
   border-radius: 100%;
@@ -716,8 +717,8 @@ form .row:first-child .floating-label-form-group {
 @import "components/timeLine";
 */
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: #2C3E50;
   color: #fff; }
   .footer__nav {
@@ -729,7 +730,7 @@ form .row:first-child .floating-label-form-group {
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
-      margin-right: 1.5rem; }
+      margin-right: 1rem; }
   .footer__link:link, .footer__link:visited {
     color: #fff;
     background-color: #2C3E50;
@@ -956,8 +957,8 @@ form .row:first-child .floating-label-form-group {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   margin: 1.5rem auto !important;
   border-radius: 0;
-  width: 100%;
-  margin-bottom: 3.5rem !important; }
+  margin-bottom: 3.5rem !important;
+  width: 90%; }
   @media (min-width: 992px) {
     .resume-main .card {
       width: 70%; } }

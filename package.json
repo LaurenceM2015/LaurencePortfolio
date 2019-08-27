@@ -22,9 +22,7 @@
     "url": "https://github.com/LaurenceM2015/LaurencePortfolio/issues"
   },
   "homepage": "https://github.com/LaurenceM2015/LaurencePortfolio#readme",
-  "dependencies": {
-    "quicksand": "0.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "node-sass": "^4.5.3",
