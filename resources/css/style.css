@@ -61,6 +61,11 @@ a:focus, a:hover, a:active {
   font-family: 'Montserrat';
   font-size: 1.5rem; }
 
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%; }
+
 /* TYPOGRAPHY */
 h1,
 h2,
@@ -330,11 +335,10 @@ hr.star-dark:after {
   position: relative;
   overflow: hidden;
   max-width: 53rem;
+  height: 30rem;
   margin: auto auto 1rem; }
   .portfolio-item .caption {
     display: flex;
-    height: 100%;
-    width: 100%;
     background-color: rgba(33, 37, 41, 0.2);
     position: absolute;
     top: 0;
@@ -356,6 +360,7 @@ hr.star-dark:after {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
+    width: 100%;
     height: 100%; }
   .portfolio-item:hover .caption-content {
     opacity: 1; }
@@ -411,11 +416,19 @@ hr.star-dark:after {
     background-image: linear-gradient(to right, #7ed56f, #15a589);
     -webkit-background-clip: text;
     color: transparent; }
+    .feature-box__icon--small {
+      font-size: 1.5rem;
+      padding-right: .5rem; }
     @media (min-width: 992px) {
       .feature-box__icon {
         margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box__text {
+    text-align: left; }
+    .feature-box__text li {
+      display: flex;
+      padding: .2rem 0; }
 
 .about-cards {
   display: grid;
