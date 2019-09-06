@@ -49,6 +49,10 @@
         &::after {
             background-color: $color-primary;
         }
+
+        &:hover{
+            color: $color-white;
+        }
     }
     
     &::after {

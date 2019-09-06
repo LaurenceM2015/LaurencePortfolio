@@ -266,6 +266,8 @@ hr.star-dark:after {
   color: #fff; }
   .Btn--green::after {
     background-color: #18BC9C; }
+  .Btn--green:hover {
+    color: #fff; }
 
 .Btn::after {
   content: "";
@@ -326,6 +328,9 @@ hr.star-dark:after {
     background-color: rgba(33, 37, 41, 0.5);
     line-height: 3.1rem; }
 
+/*========================================*/
+/*              PORTFOLIO BOXS              */
+/*========================================*/
 .portfolio-item {
   cursor: pointer;
   display: block;
@@ -336,7 +341,6 @@ hr.star-dark:after {
   margin: auto auto 1rem; }
   .portfolio-item .caption {
     display: flex;
-    background-color: rgba(33, 37, 41, 0.2);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -373,24 +377,6 @@ hr.star-dark:after {
       max-width: none;
       margin: 0; } }
 
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem; }
-  @media (min-width: 992px) {
-    .portfolio-modal .portfolio-modal-title {
-      font-size: 3rem;
-      line-height: 2.5rem; } }
-
-.portfolio-modal .close {
-  position: absolute;
-  z-index: 1;
-  right: 1.5rem;
-  top: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #18BC9C;
-  opacity: 1; }
-
 /*========================================*/
 /*              FEATURE BOXS              */
 /*========================================*/
@@ -409,7 +395,9 @@ hr.star-dark:after {
   .feature-box--card {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-gap: 1.5rem; }
+    grid-gap: 1.5rem;
+    font-size: 1rem;
+    padding: 1%; }
     .feature-box--card i {
       grid-row: 1 / span 2; }
     .feature-box--card h3 {
@@ -579,6 +567,27 @@ hr.star-dark:after {
         border-color: #18BC9C;
         border-width: .25rem;
         width: 30%; } }
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem; }
+  @media (min-width: 992px) {
+    .portfolio-modal .portfolio-modal-title {
+      font-size: 3rem;
+      line-height: 2.5rem; } }
+
+.portfolio-modal img {
+  height: 40vh; }
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #18BC9C;
+  opacity: 1; }
 
 .form {
   padding: 0 1.5rem; }
@@ -908,16 +917,21 @@ form .row:first-child .floating-label-form-group {
 /*========================================*/
 /*              FEATURE SECTION            */
 /*========================================*/
-.feature-section .feature-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-  grid-gap: 2.5rem; }
+.feature-section {
+  padding-bottom: 15rem; }
+  .feature-section .feature-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-gap: 2.5rem; }
 
 /*========================================*/
 /*              PORTFOLIO SECTION          */
 /*========================================*/
 .portfolio-section {
-  padding-bottom: 15rem; }
+  padding-bottom: 15rem;
+  transform: skewY(-7deg); }
+  .portfolio-section > * {
+    transform: skewY(7deg); }
 
 .about-section {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(21, 165, 137, 0.8)), url(img/bkg-img.jpg);
