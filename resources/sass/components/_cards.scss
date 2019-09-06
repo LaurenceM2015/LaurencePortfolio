@@ -97,24 +97,6 @@
 }
 
 
-// FEATURE CARD BOX
-
-.feature-card{
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-gap: 1.5rem;
-  //grid-row-gap: 1.5rem;
-  //grid-column-gap: 2.5rem;
-
-  i{
-    grid-row: 1 / span 2;
-  }
-
-  h3{
-    text-align: left;
-  }
-  
-}
 
 
 
@@ -130,11 +112,48 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s;
-  
 
-  &--border-b{
+
+  &--border{
     border-bottom: .25rem solid rgba($color-primary-dark, .8) !important;
   }
+
+  &--hover{
+    &:hover {transform: translateY(-1.5rem) scale(1.03);}
+  }
+
+  // FEATURE CARD BOX
+
+  &--card{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1.5rem;
+    //grid-row-gap: 1.5rem;
+    //grid-column-gap: 2.5rem;
+
+    i{
+      grid-row: 1 / span 2;
+    }
+
+    h3{
+      text-align: left;
+    }
+
+    &:nth-child(odd).animate{
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    &:nth-child(even).animate{
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+  
+
+  
 
   @media (min-width: 992px) {
       padding: 2rem;
@@ -160,10 +179,6 @@
       }
 
   
-  }
-
-  &:hover {
-      transform: translateY(-1.5rem) scale(1.03);
   }
 
   &__text{

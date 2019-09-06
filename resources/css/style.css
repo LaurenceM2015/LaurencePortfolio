@@ -31,9 +31,6 @@ body {
 
 a {
   color: #18BC9C; }
-
-a {
-  color: #18BC9C; }
   a:focus, a:hover, a:active {
     color: #128f76; }
 
@@ -66,15 +63,15 @@ a:focus, a:hover, a:active {
   width: 70%;
   margin-left: 15%; }
 
-/* TYPOGRAPHY */
+/*========================================*/
+/*               TYPOGRAPHY               */
+/*========================================*/
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-family: 'Montserrat';
   text-transform: uppercase;
   text-align: center; }
 
@@ -394,15 +391,6 @@ hr.star-dark:after {
   color: #18BC9C;
   opacity: 1; }
 
-.feature-card {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-gap: 1.5rem; }
-  .feature-card i {
-    grid-row: 1 / span 2; }
-  .feature-card h3 {
-    text-align: left; }
-
 /*========================================*/
 /*              FEATURE BOXS              */
 /*========================================*/
@@ -414,8 +402,26 @@ hr.star-dark:after {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
-  .feature-box--border-b {
+  .feature-box--border {
     border-bottom: 0.25rem solid rgba(21, 165, 137, 0.8) !important; }
+  .feature-box--hover:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box--card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1.5rem; }
+    .feature-box--card i {
+      grid-row: 1 / span 2; }
+    .feature-box--card h3 {
+      text-align: left; }
+    .feature-box--card:nth-child(odd).animate {
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+    .feature-box--card:nth-child(even).animate {
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
   @media (min-width: 992px) {
     .feature-box {
       padding: 2rem; } }
@@ -432,8 +438,6 @@ hr.star-dark:after {
     @media (min-width: 992px) {
       .feature-box__icon {
         margin-bottom: 0; } }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__text {
     text-align: left; }
     .feature-box__text li {
@@ -908,8 +912,6 @@ form .row:first-child .floating-label-form-group {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   grid-gap: 2.5rem; }
-  .feature-section .feature-row .feature-box {
-    border-bottom: 0.25rem solid rgba(21, 165, 137, 0.8) !important; }
 
 /*========================================*/
 /*              PORTFOLIO SECTION          */

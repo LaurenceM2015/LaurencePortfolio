@@ -86,3 +86,21 @@ $(document).ready(function(){
 
   });
 });
+
+
+// SCROLLING BOX LEFT AND RIGHT
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var y = $(this).scrollTop();
+    
+    if(y >= 200){
+      $('.js-move-in-on-scroll').addClass('animate');
+      
+    }
+    
+    if(y < 200){
+      $('.js-move-in-on-scroll').removeClass('animate');
+      
+    }
+  });
+});

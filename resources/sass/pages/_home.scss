@@ -5,16 +5,10 @@
 
 .feature-section{
 
-    
-
     .feature-row{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
         grid-gap: 2.5rem;
-
-        .feature-box{
-            border-bottom: .25rem solid rgba($color-primary-dark, .8) !important;
-        }
     }
 
 }
