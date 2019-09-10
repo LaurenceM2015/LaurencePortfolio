@@ -383,11 +383,15 @@ hr.star-dark:after {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.3rem;
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform .3s;
+  margin-bottom: 2rem; }
+  @media (min-width: 992px) {
+    .feature-box {
+      margin-bottom: 0; } }
   .feature-box--border {
     border-bottom: 0.25rem solid rgba(21, 165, 137, 0.8) !important; }
   .feature-box--hover:hover {
@@ -395,9 +399,11 @@ hr.star-dark:after {
   .feature-box--card {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-gap: 1.5rem;
-    font-size: 1rem;
-    padding: 1%; }
+    grid-gap: 1rem;
+    font-size: 1rem; }
+    @media (min-width: 992px) {
+      .feature-box--card {
+        padding: 1rem; } }
     .feature-box--card i {
       grid-row: 1 / span 2; }
     .feature-box--card h3 {
@@ -410,11 +416,8 @@ hr.star-dark:after {
       animation-name: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out; }
-  @media (min-width: 992px) {
-    .feature-box {
-      padding: 2rem; } }
   .feature-box__icon {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #15a589);
@@ -919,11 +922,12 @@ form .row:first-child .floating-label-form-group {
 /*========================================*/
 .feature-section {
   padding-bottom: 15rem; }
-  .feature-section .feature-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    grid-gap: 2.5rem;
-    align-items: center; }
+  @media (min-width: 992px) {
+    .feature-section .feature-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+      grid-gap: 2.5rem;
+      align-items: center; } }
 
 /*========================================*/
 /*              PORTFOLIO SECTION          */
