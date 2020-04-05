@@ -91,6 +91,12 @@
   transition: transform .3s;
   margin-bottom: 2rem;
 
+  &--header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+
   @media (min-width: 992px) {
     margin-bottom: 0;
    
@@ -108,20 +114,12 @@
   // FEATURE CARD BOX
 
   &--card{
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-gap: 1rem;
-    font-size: 1rem;
+    
 
     @media (min-width: 992px) {
       padding: 1rem;
   }
-    
-    
 
-    i{
-      grid-row: 1 / span 2;
-    }
 
     h3{
       text-align: left;

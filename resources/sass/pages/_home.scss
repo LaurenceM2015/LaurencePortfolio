@@ -4,20 +4,13 @@
 /*========================================*/
 
 .feature-section{
-
-    .feature-row{
-        
-
-        @media(min-width: 992px){
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-            grid-gap: 2.5rem;
-            align-items: center;
-        }
-        
-    }
-
     padding-bottom: 15rem;
+
+    .col-md-6{
+        margin-bottom: 2rem;
+
+        .feature-box{height: 100%;}
+    }
 
 }
 

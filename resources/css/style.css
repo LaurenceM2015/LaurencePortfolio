@@ -392,6 +392,10 @@ hr.star-dark:after {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   margin-bottom: 2rem; }
+  .feature-box--header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem; }
   @media (min-width: 992px) {
     .feature-box {
       margin-bottom: 0; } }
@@ -399,26 +403,19 @@ hr.star-dark:after {
     border-bottom: 0.25rem solid rgba(21, 165, 137, 0.8) !important; }
   .feature-box--hover:hover {
     transform: translateY(-1.5rem) scale(1.03); }
-  .feature-box--card {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-gap: 1rem;
-    font-size: 1rem; }
-    @media (min-width: 992px) {
-      .feature-box--card {
-        padding: 1rem; } }
-    .feature-box--card i {
-      grid-row: 1 / span 2; }
-    .feature-box--card h3 {
-      text-align: left; }
-    .feature-box--card:nth-child(odd).animate {
-      animation-name: moveInLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-out; }
-    .feature-box--card:nth-child(even).animate {
-      animation-name: moveInRight;
-      animation-duration: 1s;
-      animation-timing-function: ease-out; }
+  @media (min-width: 992px) {
+    .feature-box--card {
+      padding: 1rem; } }
+  .feature-box--card h3 {
+    text-align: left; }
+  .feature-box--card:nth-child(odd).animate {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .feature-box--card:nth-child(even).animate {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
   .feature-box__icon {
     font-size: 4rem;
     margin-bottom: .5rem;
@@ -921,12 +918,10 @@ form .row:first-child .floating-label-form-group {
 /*========================================*/
 .feature-section {
   padding-bottom: 15rem; }
-  @media (min-width: 992px) {
-    .feature-section .feature-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-      grid-gap: 2.5rem;
-      align-items: center; } }
+  .feature-section .col-md-6 {
+    margin-bottom: 2rem; }
+    .feature-section .col-md-6 .feature-box {
+      height: 100%; }
 
 /*========================================*/
 /*              PORTFOLIO SECTION          */
